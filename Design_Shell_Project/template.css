@@ -1,0 +1,21 @@
+.hFontClass{
+    color: darkblue;
+    font-size: 200%;
+    font-family: Verdana;
+    margin: 20px;
+    text-align: center;
+}
+.pTextClass{
+    padding: 10px;
+    background: khaki;
+    font-style: oblique;    
+    color: firebrick;  
+    width: 500px;  
+}
+.divPriceClass{
+    border: red solid 2px;
+    width: 500px;
+    border-radius: 40px;
+    text-align: center;
+    justify-content: center;
+}
