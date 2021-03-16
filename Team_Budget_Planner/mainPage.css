@@ -1,0 +1,16 @@
+.hFontClass{
+    color: darkblue;
+    font-size: 40px;
+    font-family: Verdana;
+    margin: 20px;
+    text-align: center;
+    
+}
+.center {
+    margin: auto;
+    width: 25%;
+    border: 8px solid;
+    padding: 20px;
+    text-align: center;
+  }
+
