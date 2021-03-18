@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simple.css">
+    <script src="simple.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <br/><br/>
+    <div  class="center"><br/>
+    <h1 class="hFontClass">Simply Blogging</h1><br/>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+        <a href="#" class="nav-link"> Add Blog</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">About us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Contacts</a>
+        </li>
+    </ul> <br/>
+    <div class="container-fluid">
+        <form action="" class="form-group">
+            <div class="row">
+                <label class="col-2">Title</label>
+                <input type="text" name="title" id="title" class="col-2"/>
+            </div><br/>
+            <div class="row">
+                <label class="col-2">Articles</label>
+                <textarea name="articles" id="articles" cols="20" rows="5" class="col-2"></textarea>
+                
+            </div><br/>
+            <div class="row">
+                <label class="col-2">Add Image</label>
+                <input type="file" id="imageId" class="col-4"/>
+            </div><br/>
+            <div>
+                <input type="button" value="Add Blog" onclick="addBlog()" class="col-2"/>
+            </div>
+            
+        </form>
+    </div>
+    
+    </div>     
+    
+    <!-- <div>
+        <div id="titleInfo"></div>
+        <div id="descInfo"></div>
+        <img src="" id="imageInfo" width="100" height="100"/>
+    </div> -->
+
+    <br/><br/>
+
+    </body>
+</html>
