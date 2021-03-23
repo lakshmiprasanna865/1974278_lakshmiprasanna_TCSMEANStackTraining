@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        div{
+            border: solid 2px red;
+        }
+    </style>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+</head>
+<body>
+
+    <br/>
+    <div class="container">
+        <h2 class="text-center">Shopping Cart</h2>
+        <label href="#" class="text-left">Cart size: </label>
+        <input type="number" id="cart_size" value="0" readonly>
+        <a href="file:///C:/Users/laksh/OneDrive/Desktop/TCSMEANStackTraining/Cart%20Management/checkout.html" class="text-right">Checkout</a>
+        <br/><br/>
+
+        <div class="container">
+            <label>Name:</label> &nbsp;
+            <input type="text" name="name" id="name1" value="mobile" readonly>
+            <br/>
+            <label>Price:</label> &nbsp;
+            <input type="number" name="price" id="price1" value="400" readonly>
+            <br/>
+            <button type="button" onclick="add(1)">Add</button>
+        </div>
+        <br/>
+
+        <div class="container">
+            <label>Name:</label> &nbsp;
+            <input type="text" name="name" id="name2" value="laptop" readonly>
+            <br/>
+            <label>Price:</label> &nbsp;
+            <input type="number" name="price" id="price2" value="700" readonly>
+            <br/>
+            <button type="button" onclick="add(2)">Add</button>
+        </div>
+        <br/>
+        <div class="container">
+            <label>Name:</label> &nbsp;
+            <input type="text" name="name" id="name3" value="earphones" readonly>
+            <br/>
+            <label>Price:</label> &nbsp;
+            <input type="number" name="price" id="price3" value="10" readonly>
+            <br/>
+            <button type="button" onclick="add(3)">Add</button>
+        </div>
+        <br/>
+        <div class="container">
+            <label>Name:</label> &nbsp;
+            <input type="text" name="name" id="name4" value="cable" readonly>
+            <br/>
+            <label>Price:</label> &nbsp;
+            <input type="number" name="price" id="price4" value="20" readonly>
+            <br/>
+            <button type="button" onclick="add(4)">Add</button>
+        </div>
+        <br/>
+        <div class="container">
+            <label>Name:</label> &nbsp;
+            <input type="text" name="name" id="name5" value="outlet" readonly>
+            <br/>
+            <label>Price:</label> &nbsp;
+            <input type="number" name="price" id="price5" value="15" readonly>
+            <br/>
+            <button type="button" onclick="add(5)">Add</button>
+        </div>
+        <br/>
+        <div class="container">
+            <label>Name:</label> &nbsp;
+            <input type="text" name="name" id="name6" value="adapter" readonly>
+            <br/>
+            <label>Price:</label> &nbsp;
+            <input type="number" name="price" id="price6" value="25" readonly>
+            <br/>
+            <button type="button" onclick="add(6)">Add</button>
+        </div>
+        <br/>
+    </div>
+</body>
+</html>

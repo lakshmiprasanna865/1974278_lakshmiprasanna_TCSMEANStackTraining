@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cart.js"></script>
+    <script>
+    function getSessionData(){
+    var getProducts = JSON.parse(sessionStorage.getItem("s1"));
+    var getPrice = JSON.parse(sessionStorage.getItem("s2"));
+    
+    k = "<table id='BudgetList' border='1px solid black'>"+"<thead><tr>";
+    k += "<th>Product Name</th>";
+    k += "<th>Product Price</th>";
+    k += "</tr>";
+    k += "</thead>";
+    k += "<tbody>";
+    v = "<p> Total price : ";
+    var temp = 0;
+       // alert(getProducts.length)
+    for(var it = 0; it < getProducts.length; it++){
+        k += "<tr>";
+        k += '<td>' + getProducts[it] + '</td>';
+       // alert(getProducts[it])
+        k += '<td>' + getPrice[it] + '</td>';
+        //alert(getPrice[it])
+        temp += parseInt(getPrice[it]);
+        k+= '</tr>';
+    }
+    
+    
+    k += "</tbody></table></br>";
+    v += temp+"</p>";
+    document.getElementById('tableData').innerHTML = k;
+    document.getElementById('priceData').innerHTML = v;
+
+}
+    </script>
+</head>
+<body onload="getSessionData()">
+    
+    <div id="tableData"></div>
+    <div id="priceData"></div>
+    
+</body>
+</html>
