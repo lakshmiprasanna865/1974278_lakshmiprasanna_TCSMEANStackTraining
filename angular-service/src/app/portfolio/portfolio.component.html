@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {text-align: center;}
+    </style>
+    <style>
+        table, th, td {
+            text-align: center;
+          border: 1px solid black;
+        }
+        </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+            <h2>My portfolio</h2><br/><br/>
+            <h4>Username : {{name}} </h4>
+            <br/><br/>
+
+            <div class="container-fluid">
+        <form action="" class="form-group" [formGroup]="regRef" (ngSubmit)="add()">
+            <div class="row">
+                <label class="col-2">Contact Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" formControlName="contact" id="title" class="col-2"/>
+            </div><br/>
+            <div class="row">
+                <label class="col-2">Phone Number</label>&nbsp;&nbsp;
+                <input formControlName="phone" id="articles" cols="20" rows="5" class="col-2"/>
+                
+            </div><br/>
+            
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Add Blog"  class="col-2"/>
+            </div>
+            
+        </form>
+    </div>           
+
+    </div>            
+            
+</body>
+</html><div>
+   <br/>
+   <table>
+       
+      <thead>
+         <tr>
+            <th>Contact Name</th>
+            <th>Phone Number</th>
+            
+         </tr>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let item, i of t1,a1">
+            <td>{{item}}</td>
+            <td>{{i}}</td>
+        </tr>
+
+      </tbody>
+   </table>
+</div>
