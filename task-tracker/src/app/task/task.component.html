@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            text-align: center;
+        }
+    </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <form class="form-horizontal" #empRef="ngForm" (ngSubmit)="storeUser(empRef.value)" >
+        <br/><br/>
+        <h1 class="heading">Task Registration</h1><br/><br/>
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">Id</label>
+            <div class="col-sm-9">
+                <input type="text"  class="form-control" name="id" ngModel>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" name="name" ngModel>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">Task</label>
+            <div class="col-sm-9">
+                <textarea class="form-control" name="task" ngModel></textarea>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">Dead Line</label>
+            <div class="col-sm-9">
+                <input type="date"  class="form-control" name="date" ngModel>
+            </div>
+        </div>
+        
+        <div class="container bg-light">
+            <div class="col-md-12 text-center">
+                <input type="submit" class="btn btn-success" value="submit"/> &nbsp;&nbsp;
+                <input type="reset" class="btn btn-primary" value="Reset">
+            </div>
+        </div>
+        
+    </form> <!-- /form -->
+</div><br/><br/><br/>
+
+<div class="container">
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Dead Line</th>
+        </tr>
+        <tr *ngFor="let t of tasks">
+                <td>{{t.id}}</td>
+                <td>{{t.name}}</td>
+                <td>{{t.task}}</td>
+                <td>{{t.date}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
