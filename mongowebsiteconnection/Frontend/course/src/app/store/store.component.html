@@ -1,0 +1,14 @@
+<div>
+    <form #courseRef="ngForm" (ngSubmit)="storeProduct(courseRef.value)">
+        <label>CourseId</label>
+        <input type="text" name="cid" ngModel><br/>
+        <label>Course Name</label>
+        <input type="text" name="cname" ngModel><br/>
+        <label>Description</label>
+        <input type="text" name="description" ngModel><br/>
+        <label>Amount</label>
+        <input type="text" name="amount" ngModel><br/>
+        <input type="submit" value="store"/>
+        <input type="reset" value="reset"/>
+    </form>
+</div>

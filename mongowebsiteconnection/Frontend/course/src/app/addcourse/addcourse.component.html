@@ -1,0 +1,9 @@
+<div>
+    <form #courseRef="ngForm" (ngSubmit)="add(courseRef.value)">
+        <label>CourseId: </label>
+        <input type="text" name="cid" ngModel><br/>
+        <label>Amount: </label>
+        <input type="text" name="amount" ngModel><br/>
+        <input type="submit" value="store"/>
+    </form>
+</div>

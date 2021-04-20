@@ -1,0 +1,16 @@
+<div>
+    <table border="1">
+            <tr>
+                <th>CId</th>
+                <th>CourseName</th>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+            <tr *ngFor="let c of courses1">
+                    <td>{{c._id}}</td>
+                    <td>{{c.cname}}</td>
+                    <td>{{c.description}}</td>
+                    <td>{{c.amount}}</td>
+            </tr>
+    </table>
+</div>

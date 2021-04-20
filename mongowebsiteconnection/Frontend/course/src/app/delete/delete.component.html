@@ -1,0 +1,8 @@
+<div>
+    <form #courseRef="ngForm" (ngSubmit)="delete(courseRef.value)">
+        <label>CourseId</label>
+        <input type="text" name="cid" ngModel><br/>
+        
+        <input type="submit" value="delete"/>
+    </form>
+</div>
